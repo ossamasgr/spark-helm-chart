@@ -1,0 +1,34 @@
+apiVersion: v1
+entries:
+  spark:
+  - annotations:
+      category: Infrastructure
+    apiVersion: v2
+    appVersion: 3.3.0
+    created: "2022-09-08T13:41:12.640016149+02:00"
+    dependencies:
+    - name: common
+      repository: https://charts.bitnami.com/bitnami
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: Apache Spark is a high-performance engine for large-scale computing
+      tasks, such as data processing, machine learning and real-time data streaming.
+      It includes APIs for Java, Python, Scala and R.
+    digest: 15a5db3d12dc0b7959a87484fcbacee15ff64814e88991dd779615a2d955a765
+    home: https://github.com/bitnami/charts/tree/master/bitnami/spark
+    icon: https://bitnami.com/assets/stacks/spark/img/spark-stack-220x234.png
+    keywords:
+    - apache
+    - spark
+    maintainers:
+    - name: Bitnami
+      url: https://github.com/bitnami/charts
+    name: spark
+    sources:
+    - https://github.com/bitnami/containers/tree/main/bitnami/spark
+    - https://spark.apache.org/
+    urls:
+    - https://github.com/ossamasgr/spark-helm-chart/spark-6.3.1.tgz
+    version: 6.3.1
+generated: "2022-09-08T13:41:12.628633906+02:00"
