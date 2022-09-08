@@ -239,6 +239,7 @@ master:
   ##
   nodeSelector: 
     spark: "yes"
+    sparkmasters: "yes"
   ## @param master.tolerations Spark master tolerations for pod assignment
   ## ref: https://kubernetes.io/docs/concepts/configuration/taint-and-toleration/
   ##
@@ -517,6 +518,7 @@ worker:
   ##
   nodeSelector: 
     spark: "yes"
+    sparkworkers: "yes"
   ## @param worker.tolerations Spark worker tolerations for pod assignment
   ## ref: https://kubernetes.io/docs/concepts/configuration/taint-and-toleration/
   ##
