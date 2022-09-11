@@ -238,7 +238,6 @@ master:
   ## ref: https://kubernetes.io/docs/user-guide/node-selection/
   ##
   nodeSelector: 
-    spark: "yes"
     sparkmasters: "yes"
   ## @param master.tolerations Spark master tolerations for pod assignment
   ## ref: https://kubernetes.io/docs/concepts/configuration/taint-and-toleration/
