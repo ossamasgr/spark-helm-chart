@@ -150,13 +150,10 @@ master:
   daemonMemoryLimit: ""
   ## @param master.configOptions Use a string to set the config options for in the form "-Dx=y"
   ##
-  configOptions: ""
-  ## @param master.extraEnvVars Extra environment variables to pass to the master container
-  ## For example:
-  ## extraEnvVars:
-  ##  - name: SPARK_DAEMON_JAVA_OPTS
-  ##    value: -Dx=y
-  ##
+  configOptions:
+    -Dspark.ui.reverseProxy=true 
+    -Dspark.ui.reverseProxyUrl=https://spark.tr4d1ng.com
+
   extraEnvVars: []
   ## @param master.extraEnvVarsCM Name of existing ConfigMap containing extra env vars for master nodes
   ##
@@ -427,12 +424,8 @@ worker:
   ## @param worker.configOptions Set extra options to configure the worker in the form `-Dx=y`
   ##
   configOptions: ""
-  ## @param worker.extraEnvVars An array to add extra env vars
-  ## For example:
-  ## extraEnvVars:
-  ##  - name: SPARK_DAEMON_JAVA_OPTS
-  ##    value: -Dx=y
-  ##
+    -Dspark.ui.reverseProxy=true 
+    -Dspark.ui.reverseProxyUrl=https://spark.tr4d1ng.com
   extraEnvVars: []
   ## @param worker.extraEnvVarsCM Name of existing ConfigMap containing extra env vars for worker nodes
   ##
