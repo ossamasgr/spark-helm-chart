@@ -289,9 +289,9 @@ master:
   ##
   resources:
     ## Example:
-     limits:
+    # limits:
     ##    cpu: 250m
-        memory: 14305.114746094Mi
+        #memory: 14305.114746094Mi
     ##
     limits: {}
     ## Examples:
@@ -299,7 +299,8 @@ master:
     ##    cpu: 250m
     ##    memory: 256Mi
     ##
-    requests: {}
+    requests: 
+      memory: 14306Mi
   ## Configure extra options for liveness probe
   ## ref: https://kubernetes.io/docs/tasks/configure-pod-container/configure-liveness-readiness-probes/#configure-probes
   ## @param master.livenessProbe.enabled Enable livenessProbe
