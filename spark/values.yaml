@@ -251,7 +251,7 @@ master:
   ##  rollingUpdate:
   ##    maxSurge: 25%
   ##    maxUnavailable: 25%
-  ##
+  ##F
   updateStrategy:
     type: RollingUpdate
   ## @param master.priorityClassName master pods' priorityClassName
@@ -516,7 +516,6 @@ worker:
   ## ref: https://kubernetes.io/docs/user-guide/node-selection/
   ##
   nodeSelector: 
-    spark: "yes"
     sparkworkers: "yes"
   ## @param worker.tolerations Spark worker tolerations for pod assignment
   ## ref: https://kubernetes.io/docs/concepts/configuration/taint-and-toleration/
