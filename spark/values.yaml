@@ -423,7 +423,7 @@ worker:
   javaOptions: ""
   ## @param worker.configOptions Set extra options to configure the worker in the form `-Dx=y`
   ##
-  configOptions: ""
+  configOptions:
     -Dspark.ui.reverseProxy=true 
     -Dspark.ui.reverseProxyUrl=https://spark.tr4d1ng.com
   extraEnvVars: []
