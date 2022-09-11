@@ -289,9 +289,9 @@ master:
   ##
   resources:
     ## Example:
-    ## limits:
+     limits:
     ##    cpu: 250m
-    ##    memory: 256Mi
+        memory: 14305.114746094Mi
     ##
     limits: {}
     ## Examples:
